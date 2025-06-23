@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="theme-switch" />
+      <span class="slider round"></span>
+    </label>
+    <span>Dark Mode</span>
+  </div>
+
+  <div class="container">
+    <h1 class="title">Snake Game</h1>
+
+    <div id="score">Score: 0 | High Score: 0</div>
+
+    <div class="settings">
+      <label>Grid Size:
+        <select id="grid-size">
+          <option value="20">Medium</option>
+          <option value="10">Small</option>
+          <option value="25">Large</option>
+        </select>
+      </label>
+      <label>Speed:
+        <select id="speed">
+          <option value="150">Slow</option>
+          <option value="100" selected>Normal</option>
+          <option value="60">Fast</option>
+        </select>
+      </label>
+      <label>
+        <input type="checkbox" id="sound-toggle" checked /> Sound
+      </label>
+    </div>
+
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <div class="buttons">
+      <button id="start">Start Game</button>
+      <button id="pause" class="hidden">Pause</button>
+    </div>
+
+    <div id="game-over" class="hidden">
+      <h2>Game Over</h2>
+      <p>Your Score: <span id="final-score"></span></p>
+      <p>High Score: <span id="final-high-score"></span></p>
+      <button id="play-again">Play Again</button>
+    </div>
+  </div>
+
+  <audio id="eat-sound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
