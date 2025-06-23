@@ -65,16 +65,6 @@ A modern and customizable Snake Game built with HTML, CSS, and JavaScript. This 
 
 ---
 
-## Customization Ideas
-
-- Add difficulty levels or obstacles (walls, barriers)
-- Implement multiplayer or AI snake opponents
-- Include touch controls for mobile
-- Add particle effects or animations on food pickup
-- Store multiple high scores using IndexedDB or Firebase
-
----
-
 ## License
 
 This project is licensed under the **MIT License**.  
